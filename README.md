@@ -1,9 +1,7 @@
 embed_yaws
 =====
 
-Working example of embedding yaws inside a larger Erlang application. Also has a simple API implemented using appmods.
-
-Note: This example is incompatible with windows ("There's no official support for rebar3 yet in yaws" 23/2/2016) - https://github.com/klacke/yaws/issues/254. Works fine on FreeBSD.
+Example of embedding yaws inside a larger Erlang application. Also has a simple API implemented using appmods.
 
 FreeBSD Build
 -------------
@@ -23,9 +21,9 @@ To start the application, including embedded yaws
     $ rebar3 shell
     1> application:start(embed_yaws).
 
-Links
------
 
-	www.jediluke.tech
-	www.jediluke.tech/api/test
+Known issues
+------------
 
+	- This example is incompatible with windows ("There's no official support for rebar3 yet in yaws" 23/2/2016) - https://github.com/klacke/yaws/issues/254. Works fine on FreeBSD.
+	- Embedding yaws in another application has issues when trying to make a release - http://lists.basho.com/pipermail/rebar_lists.basho.com/2016-February/002311.html. It works fine as a normal app though.
