@@ -31,9 +31,18 @@ start_link() ->
 	   	modules => [ybed_sup]
 	   	},
 
+    Ybed = #{
+            id => ybed,
+         start => {ybed, start, []},
+       restart => permanent,
+      shutdown => 5000,
+          type => worker,
+       modules => [ybed]
+       },
+
 	%%% other childspecs here
 
-	ChildSpecs = [Yaws],
+	ChildSpecs = [Ybed],
 	ok = supervisor:check_childspecs(ChildSpecs),
 
 	SupFlags = #{
