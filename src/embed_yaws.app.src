@@ -5,8 +5,7 @@
   {mod, { embed_yaws_app, []}},
   {applications, [
     kernel,
-    stdlib,
-    yaws
+    stdlib
     ]},
   {env,[]},
   {modules, []},
