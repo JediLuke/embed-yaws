@@ -34,7 +34,7 @@ run() ->
         ],
     AppMods = [
         {"api", api}
-        ].
+        ],
     SconfList = [
         {port, 8080},
         {listen, {0,0,0,0}},
