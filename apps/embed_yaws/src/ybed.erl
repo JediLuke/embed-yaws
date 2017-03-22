@@ -7,7 +7,9 @@
 -compile(export_all).
 
 -define(LOG_DIR, "logs").
--define(DOCROOT, "src/web").
+%-define(DOCROOT, "src/web").
+-define(DOCROOT, "/usr/home/freebsd/embed-yaws/apps/embed_yaws/src/web").
+
 
 -include_lib("yaws/include/yaws.hrl").
 -include_lib("yaws/include/yaws_api.hrl").
