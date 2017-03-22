@@ -10,6 +10,7 @@
 -define(DOCROOT, "src/web").
 
 -include_lib("yaws/include/yaws.hrl").
+-include_lib("yaws/include/yaws_api.hrl").
 
 %% API
 -export([start/0]).
