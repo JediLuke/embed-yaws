@@ -49,13 +49,13 @@ init([]) ->
 	ChildSpecs = [Yaws],
 	ok = supervisor:check_childspecs(ChildSpecs),
 
-	SupFlags = #{
+	RestartStrategy = #{
 		strategy => one_for_one,
 	   intensity => 1,             % Max restarts
 		  period => 5			   % Max timeout
 		  },            
 
-   {ok, {SupFlags, ChildSpecs}}.
+   {ok, {RestartStrategy, ChildSpecs}}.
 
 
 %%====================================================================

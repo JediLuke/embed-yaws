@@ -1,12 +1,12 @@
-{application, embed_yaws,
- [{description, "An OTP application"},
+{application, embed_yaws, [
+  {description, "An OTP application"},
   {vsn, "0.1.0"},
   {registered, []},
   {mod, { embed_yaws_app, []}},
-  {applications,
-   [kernel,
+  {applications, [
+    kernel,
     stdlib
-   ]},
+    ]},
   {env,[]},
   {modules, []},
 
