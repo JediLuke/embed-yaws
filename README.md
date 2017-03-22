@@ -25,5 +25,5 @@ To start the application, including embedded yaws
 Known issues
 ------------
 
-	- This example is incompatible with windows ("There's no official support for rebar3 yet in yaws" 23/2/2016) - https://github.com/klacke/yaws/issues/254. Works fine on FreeBSD.
-	- Embedding yaws in another application has issues when trying to make a release - http://lists.basho.com/pipermail/rebar_lists.basho.com/2016-February/002311.html. It works fine as a normal app though.
+	*This example is incompatible with windows ("There's no official support for rebar3 yet in yaws" 23/2/2016) - https://github.com/klacke/yaws/issues/254. Works fine on FreeBSD.
+	*Embedding yaws in another application has issues when trying to make a release - http://lists.basho.com/pipermail/rebar_lists.basho.com/2016-February/002311.html. It works fine as a normal app though.
