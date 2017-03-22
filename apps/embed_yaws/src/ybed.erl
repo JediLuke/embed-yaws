@@ -6,7 +6,7 @@
 -module('ybed').
 -compile(export_all).
 
--define(LOG_DIR, "logs").
+-define(LOG_DIR, "/usr/home/freebsd/embed-yaws/logs").
 %-define(DOCROOT, "src/web").
 -define(DOCROOT, "/usr/home/freebsd/embed-yaws/apps/embed_yaws/src/web").
 
