@@ -36,19 +36,19 @@ init([]) ->
 	   	modules => [ybed_sup]
 	   	},
 
-    %%% Ybed (yaws worker proc)
-    Ybed = #{
-            id => ybed,
-         start => {ybed, start, []},
-       restart => permanent,
-      shutdown => 5000,
-          type => worker,
-       modules => [ybed]
-       },
+    % %%% Ybed (yaws worker proc)
+    % Ybed = #{
+    %         id => ybed,
+    %      start => {ybed, start, []},
+    %    restart => permanent,
+    %   shutdown => 5000,
+    %       type => worker,
+    %    modules => [ybed]
+    %    },
 
 	%%% other childspecs here
 
-	ChildSpecs = [Ybed],
+	ChildSpecs = [Yaws],
 	ok = supervisor:check_childspecs(ChildSpecs),
 
 	SupFlags = #{
