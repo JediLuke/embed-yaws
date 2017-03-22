@@ -14,12 +14,18 @@ See: https://www.digitalocean.com/community/tutorials/recommended-steps-for-new-
     $ sudo pkg install erlang
     $ sudo pkg install rebar3
 
+Inside the embed-yaws directory (where README.md and rebar.config live). The directory can be changed in ybed.erl
+
+	$ mkdir logs
+
+To start the application, including embedded yaws
+
     $ rebar3 shell
     1> application:start(embed_yaws).
 
-Examples
---------
+Links
+-----
 
-	www.jediluke.tech:8080
-	www.jediluke.tech:8080/api/test
+	www.jediluke.tech
+	www.jediluke.tech/api/test
 

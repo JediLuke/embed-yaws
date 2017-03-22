@@ -3,21 +3,16 @@
 %% @end
 %%%-------------------------------------------------------------------
 
--module(embed_yaws_sup).
-
+-module('embed_yaws_sup').
 -behaviour(supervisor).
+-define(SERVER, ?MODULE).
 
 %% API
 -export([start_link/0]).
 
-%% Supervisor callbacks
--export([init/1]).
-
--define(SERVER, ?MODULE).
-
-%%====================================================================
+%% ------------------------------------------------------------------
 %% API functions
-%%====================================================================
+%% ------------------------------------------------------------------
 
 start_link() ->
 	supervisor:start_link({local, ?MODULE}, ?MODULE, []).
@@ -38,6 +33,7 @@ init([]) ->
 	   	modules => [ybed_sup]
 	   	},
 
+    %%% Ybed (yaws worker proc)
     Ybed = #{
             id => ybed,
          start => {ybed, start, []},
