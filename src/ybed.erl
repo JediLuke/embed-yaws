@@ -28,8 +28,9 @@ start() ->
 
 run() ->
     %%application:stop(yaws),
+    Id = "yaws",
     GconfList = [
-        {id, "yaws"},
+        {id, Id},
         {logdir, ?LOG_DIR}
         ],
     AppMods = [
