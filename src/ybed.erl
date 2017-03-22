@@ -6,13 +6,11 @@
 -module('ybed').
 -compile(export_all).
 
--define(LOG_DIR, "/usr/home/freebsd/embed-yaws/logs").
+-define(LOG_DIR, "logs").
 %-define(DOCROOT, "src/web").
--define(DOCROOT, "/usr/home/freebsd/embed-yaws/apps/embed_yaws/src/web").
 
 
 -include_lib("yaws/include/yaws.hrl").
--include_lib("yaws/include/yaws_api.hrl").
 
 %% API
 -export([start/0]).
